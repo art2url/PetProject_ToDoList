@@ -1,17 +1,38 @@
 <DOCTYPE html>
+
     <head>
         <title>To-Do List App</title>
-        <link rel = "Stylesheet" href = "css/todo.css">
-        <link rel="preconnect" href="https://fonts.googleapis.com"> 
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+        <link rel="Stylesheet" href="css/todo.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
         <link rel="shortcut icon" href="assets/favicon.ico">
         <link rel="icon" type="image/gif" href="assets/animated_favicon.gif">
     </head>
+
     <body>
         <div id="todo">
             <h1>My To-do List<i id="pensil" class="fas fa-pencil-alt"></i></h1>
-            <input type = "text" placeholder="Add New List">
-            <ul class
+
+            <input type="text" placeholder="Add New List">
+
+            <ul class="todos">
+                <li><span><i class="fas fa-trash-alt"></i></span>Early wake up</li>
+                <li><span><i class="fas fa-trash-alt"></i></span>Go to running</li>
+            </ul>
+
+            <div id="buttons">
+                <button class="save">Save</button>
+                <button class="clear">Clear</button>
+                <button class="tips">Tips</button>
+            </div>
+        </div>
+
+        <div id="overlay">
+            <a href="javascript:void(0)" class="closeTips">&times;</a>
+            <ul class = "tips">
+                <li>To hide or show input field click on pencil</li>
+            </ul>
+
         </div>
     </body>
