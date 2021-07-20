@@ -1,97 +1,107 @@
-body{
+* {
+    box-sizing: border-box;
+}
+body {
     min-height:100%;
-    font-family: Bad Script;
-    background: #91eae4;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to bottom, #91EAE4, #86A8E7, #7F7FD5);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to bottom, #91EAE4, #86A8E7, #7F7FD5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
+    font-family:'Open Sans';
+    background: #6889c7;
 }
 
-h1{
+h1 {
     text-transform: uppercase;
-    background: #86a8e7;
+    background: #86a8e8;
     color:white;
+    font-size: 18px;
     margin: 0;
-    padding:10px 28px;
+    padding: 12px 24px;
     font-weight: normal;
 }
+
 input{
     background: white;
     width: 100%;
     box-sizing: border-box;
-    height:50px ;
-    font-size: 20px;
+    height: 50px;
+    font-size: 18px;
     font-weight: 0.5px;
-    padding-left:25px;
-    border: 3px solid gray;
-    color: gray;
+    padding-left: 25px;
+    border: 2px solid rgb(255, 255, 255);
 }
+
 input:focus{
     background: #edf1f5;
     border: 3px solid #86a8e7;
-    outline:none;
+    outline: none;
     color: #86a8e7;
 }
 
 span{
-    margin-right: 10px;
-    text-align:center;
-    height:50px;
+    text-align: center;
+    height: 20px;
     width: 0;
     opacity: 0;
-    -webkit-transition:0.3s;
+    -webkit-transition: 0.3s;
     transition: 0.3s linear;
 }
 
 i{
     cursor: pointer;
 }
-button{
-    background-color:#86a8e7; /* Green */
+
+button {
+    background-color:#86a8e7; 
     border: none;
     color: white;
-    padding: 8px 20px;
+    padding: 10px;
+    margin-bottom: 10px;
+    width: 100%;
     text-align: center;
     text-decoration: none;
-    display: inline-block;
+    display: block;
     font-size: 15px;
-    border-radius:4px;
-    font-family:Bad Script;
-    -webkit-transition-duration: 0.4s; /* Safari */
+    font-family:'Open Sans';
     transition-duration: 0.4s;
     cursor: pointer;
-
+    border: 3px solid transparent;
 }
+
+button:last-child {
+    margin-bottom: 0;
+}
+
 button:hover {
-    background-color: white;
-    color: black;
-    border: 2px solid #86a8e7;
+    background-color: #fff;
+    color: #000;
+    border: 3px solid #86a8e7;
 }
 
 #buttons{
-    display:inline-block;
-    text-align:center;
-    margin-left:22%;
-    position:absolute;
-    bottom:5px;
+    display: block;
+    text-align: center;
+    width: 100%;
+    padding: 30px 30px;
+    box-sizing: border-box;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+   
 }
 #todo{
     margin: 0 auto ;
-    box-shadow: 0 0 1em black;
+    box-shadow: 0 0 0 #86a8e7;
     max-width: 400px;
-    height:100%;
-    background:white;
-    position:relative;
+    height: 100%;
+    background: white;
+    position: relative;
 }
 #overlay{
     height: 0;
     width: 100%;
     position: fixed; 
-    z-index: 1; 
+    z-index: 0; 
     left: 0;
     top: 0;
-    background-color: rgb(0,0,0); 
-    background-color: rgba(0,0,0, 0.7); 
+    background-color: #86a8e7;
     overflow-x: hidden; 
     transition: 0.5s; 
     -webkit-transition:  0.5s;
@@ -117,8 +127,9 @@ button:hover {
     padding: 0;
 }
 .todos li{
+    padding-left: 26px;
     background: #f7f7f7;
-    height:50px;
+    height: 50px;
     line-height: 50px;
     cursor: pointer;
     font-size: 20px;
@@ -149,7 +160,7 @@ button:hover {
 }
 .tips{
     position: relative;
-    top: 20%;
+    top: 100%;
     width: 100%; 
     text-align: center; 
     margin-top: 25px;
@@ -159,7 +170,7 @@ button:hover {
     .overlay a {
         font-size: 20px
     }
-    .overlay .closebtn {
+    .overlay .close {
         font-size: 40px;
         top: 15px;
         right: 35px;
