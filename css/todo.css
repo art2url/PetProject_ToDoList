@@ -48,7 +48,7 @@ i{
     cursor: pointer;
 }
 
-button {
+button{
     background-color:#86a8e7; 
     border: none;
     color: white;
@@ -65,11 +65,11 @@ button {
     border: 3px solid transparent;
 }
 
-button:last-child {
+button:last-child{
     margin-bottom: 0;
 }
 
-button:hover {
+button:hover{
     background-color: #fff;
     color: #000;
     border: 3px solid #86a8e7;
