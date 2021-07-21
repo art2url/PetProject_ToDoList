@@ -3,6 +3,7 @@
     <head>
         <title>To-Do List App</title>
         <link rel="Stylesheet" href="css/todo.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
@@ -12,32 +13,19 @@
 
     <body>
         <div id="todo">
-            <h1>My To-do List<i id="pensil" class="fas fa-pencil-alt"></i></h1>
+            <h1>My To-do List<i id="pencil" class="fas fa-pencil-alt"></i></h1>
 
-            <input type="text" placeholder="Add New List">
+            <input type="text" placeholder="Type some new to-do-yeee here!">
 
             <ul class="todos">
                 <li><span><i class="fas fa-trash-alt"></i></span>Early wake up</li>
-                <li><span><i class="fas fa-trash-alt"></i></span>Go to running</li>
+                <li><span><i class="fas fa-trash-alt"></i></span>Go for a running</li>
             </ul>
 
             <div id="buttons">
-                <button class="save">Save</button>
-                <button class="clear">Clear</button>
-                <!--<button class="tips">Tips</button>-->
+                <button class="saveButton">Save</button>
+                <button class="clearButton">Clear</button>
             </div>
         </div>
-
-        <!--<div id="overlay">
-            <a href="javascript:void(0)" class="closeTips">&times;</a>
-            <ul class="tips">
-                <li>To hide or show input field click on pencil</li>
-                <li>To add a to-do list, write your text in the input field and press Enter</li>
-                <li>To delete one item, hover over it and click on the trash can icon</li>
-                <li>To delete all to-do lists, click "Clear"</li>
-                <li>Click "Save" to save the to-do list for later</li>
-            </ul>
-
-        </div>-->
         <script src="js/todo.js"></script> 
     </body>

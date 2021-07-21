@@ -1,40 +1,35 @@
 * {
     box-sizing: border-box;
 }
-body {
-    min-height:100%;
-    font-family:'Open Sans';
-    background: #6889c7;
+body{
+    min-height: 100%;
+    font-family: 'Open Sans';
+    background: #6587c2;
 }
-
-h1 {
+h1{
     text-transform: uppercase;
     background: #86a8e8;
-    color:white;
+    color: white;
     font-size: 18px;
     margin: 0;
     padding: 12px 24px;
     font-weight: normal;
 }
-
 input{
     background: white;
     width: 100%;
     box-sizing: border-box;
-    height: 50px;
     font-size: 18px;
-    font-weight: 0.5px;
-    padding-left: 25px;
-    border: 2px solid rgb(255, 255, 255);
+    height: 52px;
+    padding-left: 24px;
+    border: solid rgb(255, 255, 255);
 }
-
 input:focus{
-    background: #edf1f5;
+    background: #fff;
     border: 3px solid #86a8e7;
-    outline: none;
-    color: #86a8e7;
+    outline: 2px;
+    color: #2b2b2b;
 }
-
 span{
     text-align: center;
     height: 20px;
@@ -43,14 +38,12 @@ span{
     -webkit-transition: 0.3s;
     transition: 0.3s linear;
 }
-
 i{
     cursor: pointer;
 }
-
 button{
-    background-color:#86a8e7; 
-    border: none;
+    text-transform: uppercase;
+    background-color: #86a8e7; 
     color: white;
     padding: 10px;
     margin-bottom: 10px;
@@ -58,68 +51,37 @@ button{
     text-align: center;
     text-decoration: none;
     display: block;
-    font-size: 15px;
+    font-size: 13px;
     font-family:'Open Sans';
     transition-duration: 0.4s;
     cursor: pointer;
     border: 3px solid transparent;
 }
-
 button:last-child{
     margin-bottom: 0;
 }
-
 button:hover{
     background-color: #fff;
-    color: #000;
+    color: #2b2b2b;
     border: 3px solid #86a8e7;
 }
-
 #buttons{
     display: block;
     text-align: center;
     width: 100%;
-    padding: 30px 30px;
+    padding: 24px 24px;
     box-sizing: border-box;
     position: absolute;
     bottom: 0;
     left: 0;
-   
 }
 #todo{
     margin: 0 auto ;
-    box-shadow: 0 0 0 #86a8e7;
-    max-width: 400px;
+    max-width: 380px;
     height: 100%;
     background: white;
     position: relative;
-}
-#overlay{
-    height: 0;
-    width: 100%;
-    position: fixed; 
-    z-index: 0; 
-    left: 0;
-    top: 0;
-    background-color: #86a8e7;
-    overflow-x: hidden; 
-    transition: 0.5s; 
-    -webkit-transition:  0.5s;
-}
-#overlay .closebtn {
-    position: absolute;
-    top: 15px;
-    right: 40px;
-    font-size: 60px;
-    color:#86a8e7;
-    cursor: pointer;
-}
-#overlay li{
-    padding: 8px;
-    list-style-type:circle;
-    font-size: 30px;
-    color: #818181;
-    display: block;
+    
 }
 .todos{
     list-style-type: none;
@@ -127,56 +89,38 @@ button:hover{
     padding: 0;
 }
 .todos li{
-    padding-left: 26px;
+    padding-left: 24px;
     background: #f7f7f7;
-    height: 50px;
-    line-height: 50px;
+    height: 52px;
+    line-height: 52px;
     cursor: pointer;
-    font-size: 20px;
+    font-size: 18px;
 }
 .todos li:nth-child(2n){
-    background:#edf1f5;
+    background: #edf1f5;
 }
 .todos li:hover span{
-    width: 50px;
+    width: 52px;
     opacity: 1.0;
     margin-left: 5px;
 }
 .display{
-    display:none;
+    display: none;
     transition: 0.3s linear;
 }
 .checked{
-    color:gray;
-    text-decoration:line-through;
+    color: rgb(155, 155, 155);
+    text-decoration: line-through;
 }
-
 .fa-pencil-alt{
     float: right;
-    padding-top: 8px;
+    padding-top: 2px;
+    size: 18px 18px;
+    color: #ffffff;
 }
 .fa-trash-alt{
-    color:#7f7fd5;
-}
-.tips{
-    position: relative;
-    top: 100%;
-    width: 100%; 
-    text-align: center; 
-    margin-top: 25px;
-}
-/*  if screen size less than 450px, resize tips lists and close btn so they don't overlap */
-@media screen and (max-height: 450px) {
-    .overlay a {
-        font-size: 20px
-    }
-    .overlay .close {
-        font-size: 40px;
-        top: 15px;
-        right: 35px;
-    }
-    #todo{
-        width:100%;
-        height:100%;
-    }
+    float: right;
+    padding-top: 16px;
+    padding-right: 26px;
+    color: #d8c5c5;    
 }
