@@ -17,12 +17,17 @@ h1{
 }
 input{
     background: white;
+    color: #86a8e8;
     width: 100%;
     box-sizing: border-box;
     font-size: 18px;
     height: 52px;
-    padding-left: 24px;
-    border: solid rgb(255, 255, 255);
+    padding-left: 22px;
+    border: solid #fff;
+}
+::placeholder {
+    color: #aaaaaa;
+    font-style: normal;
 }
 input:focus{
     background: #fff;
@@ -43,7 +48,7 @@ i{
 }
 button{
     text-transform: uppercase;
-    background-color: #86a8e7; 
+    background-color: #86a8e8; 
     color: white;
     padding: 10px;
     margin-bottom: 10px;
@@ -63,7 +68,7 @@ button:last-child{
 button:hover{
     background-color: #fff;
     color: #2b2b2b;
-    border: 3px solid #86a8e7;
+    border: 3px solid #86a8e8;
 }
 #buttons{
     display: block;
@@ -102,14 +107,14 @@ button:hover{
 .todos li:hover span{
     width: 52px;
     opacity: 1.0;
-    margin-left: 5px;
+    margin-left: 4px;
 }
 .display{
     display: none;
     transition: 0.3s linear;
 }
 .checked{
-    color: rgb(155, 155, 155);
+    color: #8dc2b9;
     text-decoration: line-through;
 }
 .fa-pencil-alt{
@@ -122,5 +127,5 @@ button:hover{
     float: right;
     padding-top: 16px;
     padding-right: 26px;
-    color: #d8c5c5;    
+    color: #ebb0b0;    
 }
